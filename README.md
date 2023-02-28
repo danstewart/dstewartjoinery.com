@@ -6,7 +6,7 @@ Source code for http://dstewartjoinery.com
 
 ```shell
 git clone git@github.com:danstewart/dstewartjoinery.com.git
-firefox index.html
+firefox src/index.html
 ```
 
 ### Deploy
