@@ -1,4 +1,6 @@
 /* MARGIN */
+
+/* Bottom */
 .mb-none {
 	margin-bottom: 0;
 }
@@ -17,6 +19,69 @@
 
 .mb-xl {
 	margin-bottom: 2rem;
+}
+
+/* Right */
+.mr-none {
+	margin-right: 0;
+}
+
+.mr-sm {
+	margin-right: 0.5rem;
+}
+
+.mr-md {
+	margin-right: 1rem;
+}
+
+.mr-lg {
+	margin-right: 1.5rem;
+}
+
+.mr-xl {
+	margin-right: 2rem;
+}
+
+/* Top */
+.mt-none {
+	margin-left: 0;
+}
+
+.mt-sm {
+	margin-top: 0.5rem;
+}
+
+.mt-md {
+	margin-top: 1rem;
+}
+
+.mt-lg {
+	margin-top: 1.5rem;
+}
+
+.mt-xl {
+	margin-top: 2rem;
+}
+
+/* Left */
+.ml-none {
+	margin-left: 0;
+}
+
+.ml-sm {
+	margin-left: 0.5rem;
+}
+
+.ml-md {
+	margin-left: 1rem;
+}
+
+.ml-lg {
+	margin-left: 1.5rem;
+}
+
+.ml-xl {
+	margin-left: 2rem;
 }
 
 /* PADDING */
