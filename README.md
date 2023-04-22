@@ -12,7 +12,6 @@ firefox src/index.html
 ### Deploy
 
 ```shell
-cp -r src/* /data/www/dstewartjoinery.com/
-sudo systemctl restart nginx
+./deploy.sh
 ```
 
