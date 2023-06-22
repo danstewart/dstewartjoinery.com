@@ -2,16 +2,26 @@
 @import "/css/core.css";
 @import "/css/util/all.css";
 
-#gallery img {
-    margin-right: 0.5rem;
-    margin-bottom: 1rem;
+body {
+    margin-bottom: 200px;
 }
 
-#gallery-images {
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+    width: 100%;
+    height: 700px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-#gallery-images > img {
-    align-self: start;
+.gallery-cell > img {
+    align-self: center;
+}
+
+.flickity-button {
+    height: 60px !important;
+    width: 60px !important;
 }
