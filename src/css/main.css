@@ -4,5 +4,14 @@
 
 #gallery img {
     margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#gallery-images {
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery-images > img {
+    align-self: start;
 }
