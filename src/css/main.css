@@ -21,7 +21,8 @@ body {
 
 .gallery {
     min-height: 750px;
-    background: #dbdddc;
+    background: transparent;
+    border: 2px solid grey;
 }
 
 .flickity-page-dots {
