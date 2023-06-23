@@ -3,7 +3,20 @@
 @import "/css/util/all.css";
 
 body {
+    margin: 0;
+    padding: 0;
+
+    margin-top: -25px;
     margin-bottom: 200px;
+
+    font-family: sans-serif;
+    max-width: 100vw;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
 }
 
 .gallery {
@@ -24,4 +37,16 @@ body {
 .flickity-button {
     height: 60px !important;
     width: 60px !important;
+}
+
+.iso-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #e5e5f7;
+    opacity: 0.1;
+    background-image:  linear-gradient(30deg, #00832b 12%, transparent 12.5%, transparent 87%, #00832b 87.5%, #00832b), linear-gradient(150deg, #00832b 12%, transparent 12.5%, transparent 87%, #00832b 87.5%, #00832b), linear-gradient(30deg, #00832b 12%, transparent 12.5%, transparent 87%, #00832b 87.5%, #00832b), linear-gradient(150deg, #00832b 12%, transparent 12.5%, transparent 87%, #00832b 87.5%, #00832b), linear-gradient(60deg, #00832b77 25%, transparent 25.5%, transparent 75%, #00832b77 75%, #00832b77), linear-gradient(60deg, #00832b77 25%, transparent 25.5%, transparent 75%, #00832b77 75%, #00832b77);
+    background-size: 40px 70px;
+    background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
 }
