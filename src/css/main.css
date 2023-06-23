@@ -20,7 +20,12 @@ body {
 }
 
 .gallery {
-  background: #EEE;
+    min-height: 750px;
+    background: #dbdddc;
+}
+
+.flickity-page-dots {
+    bottom: -40px;
 }
 
 .gallery-cell {
