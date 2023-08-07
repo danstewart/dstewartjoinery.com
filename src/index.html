@@ -12,9 +12,9 @@
 		<!-- Base CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 
-		<!-- Flickity -->
-		<script src="/vendor/flickity.js"></script>
-		<link rel="stylesheet" href="/vendor/flickity.css">
+		<!-- Swiper -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="/css/main.css" />
@@ -35,43 +35,70 @@
 			<section id="gallery">
 				<h2>Gallery</h2>
 
-				<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-					<!-- Bar -->
-					<div class="gallery-cell"><img src="/images/work/bar_before.jpg" alt="Bar: Before"></div>
-					<div class="gallery-cell"><img src="/images/work/bar_during.jpg" alt="Bar: During"></div>
-					<div class="gallery-cell"><img src="/images/work/bar_after.jpg" alt="Bar: After"></div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
 
-					<!-- Counter -->
-					<div class="gallery-cell"><img src="/images/work/counter_before.jpg" alt="Counter: Before"></div>
-					<div class="gallery-cell"><img src="/images/work/counter_after.jpg" alt="Counter: After"></div>
+						<!-- Bar -->
+						<div class="swiper-slide"><img src="/images/work/bar_before.jpg" alt="Bar: Before"></div>
+						<div class="swiper-slide"><img src="/images/work/bar_during.jpg" alt="Bar: During"></div>
+						<div class="swiper-slide"><img src="/images/work/bar_after.jpg" alt="Bar: After"></div>
 
-					<!-- Wetwall -->
-					<div class="gallery-cell"><img src="/images/work/wetwall_before.jpg" alt="Wetwall: Before"></div>
-					<div class="gallery-cell"><img src="/images/work/wetwall_after.jpg" alt="Wetwall: After"></div>
+						<!-- Counter -->
+						<div class="swiper-slide"><img src="/images/work/counter_before.jpg" alt="Counter: Before"></div>
+						<div class="swiper-slide"><img src="/images/work/counter_after.jpg" alt="Counter: After"></div>
 
-					<!-- Floor 1 -->
-					<div class="gallery-cell"><img src="/images/work/floor_before.jpg" alt="Floor: Before"></div>
-					<div class="gallery-cell"><img src="/images/work/floor_during.jpg" alt="Floor: During"></div>
-					<div class="gallery-cell"><img src="/images/work/floor_after.jpg" alt="Floor: After"></div>
+						<!-- Wetwall -->
+						<div class="swiper-slide"><img src="/images/work/wetwall_before.jpg" alt="Wetwall: Before"></div>
+						<div class="swiper-slide"><img src="/images/work/wetwall_after.jpg" alt="Wetwall: After"></div>
 
-					<!-- Door -->
-					<div class="gallery-cell"><img src="/images/work/door_before.jpg" alt="Door: Before"></div>
-					<div class="gallery-cell"><img src="/images/work/door_after.jpg" alt="Door: After"></div>
+						<!-- Floor 1 -->
+						<div class="swiper-slide"><img src="/images/work/floor_before.jpg" alt="Floor: Before"></div>
+						<div class="swiper-slide"><img src="/images/work/floor_during.jpg" alt="Floor: During"></div>
+						<div class="swiper-slide"><img src="/images/work/floor_after.jpg" alt="Floor: After"></div>
 
-					<!-- Cupboard -->
-					<div class="gallery-cell"><img src="/images/work/cupboard_before.jpg" alt="Cupboard: Before"></div>
-					<div class="gallery-cell"><img src="/images/work/cupboard_after.jpg" alt="Cupboard: After"></div>
+						<!-- Door -->
+						<div class="swiper-slide"><img src="/images/work/door_before.jpg" alt="Door: Before"></div>
+						<div class="swiper-slide"><img src="/images/work/door_after.jpg" alt="Door: After"></div>
 
-					<!-- Wall -->
-					<div class="gallery-cell"><img src="/images/work/wall_before.jpg" alt="Wall: Before"></div>
-					<div class="gallery-cell"><img src="/images/work/wall_during.jpg" alt="Wall: During"></div>
-					<div class="gallery-cell"><img src="/images/work/wall_after.jpg" alt="Wall: After"></div>
+						<!-- Cupboard -->
+						<div class="swiper-slide"><img src="/images/work/cupboard_before.jpg" alt="Cupboard: Before"></div>
+						<div class="swiper-slide"><img src="/images/work/cupboard_after.jpg" alt="Cupboard: After"></div>
 
-					<!-- Floor 2 -->
-					<div class="gallery-cell"><img src="/images/work/floor2_before.jpg" alt="Floor: Before"></div>
-					<div class="gallery-cell"><img src="/images/work/floor2_after.jpg" alt="Floor: After"></div>
+						<!-- Wall -->
+						<div class="swiper-slide"><img src="/images/work/wall_before.jpg" alt="Wall: Before"></div>
+						<div class="swiper-slide"><img src="/images/work/wall_during.jpg" alt="Wall: During"></div>
+						<div class="swiper-slide"><img src="/images/work/wall_after.jpg" alt="Wall: After"></div>
+
+						<!-- Floor 2 -->
+						<div class="swiper-slide"><img src="/images/work/floor2_before.jpg" alt="Floor: Before"></div>
+						<div class="swiper-slide"><img src="/images/work/floor2_after.jpg" alt="Floor: After"></div>
+					</div>
+
+					<!-- Pagination dots -->
+					<div class="swiper-pagination"></div>
+
+					<!-- Navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
 			</section>
 		</div>
+
+		<script>
+			const swiper = new Swiper('.swiper', {
+				// Optional parameters
+				direction: 'horizontal',
+				loop: true,
+
+				pagination: {
+					el: '.swiper-pagination',
+				},
+
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
 	</body>
 </html>

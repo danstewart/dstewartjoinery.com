@@ -19,30 +19,21 @@ body {
     margin: auto;
 }
 
-.gallery {
+.swiper {
     min-height: 750px;
     background: transparent;
-    border: 2px solid grey;
 }
 
-.flickity-page-dots {
-    bottom: -40px;
-}
-
-.gallery-cell {
+.swiper-slide {
     width: 100%;
     height: 750px;
     display: flex;
     justify-content: center;
 }
 
-.gallery-cell > img {
+.swiper-slide > img {
     align-self: center;
-}
-
-.flickity-button {
-    height: 60px !important;
-    width: 60px !important;
+    border: 2px solid black;
 }
 
 .iso-background {
