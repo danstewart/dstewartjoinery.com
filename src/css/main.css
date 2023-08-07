@@ -16,9 +16,8 @@ body {
 .header {
     background-color: black;
     color: white;
-    width: 100vw;
+    width: calc(100vw - 40px);
     padding: 20px;
-    padding-right: 0px;
 }
 
 .header h1 {
